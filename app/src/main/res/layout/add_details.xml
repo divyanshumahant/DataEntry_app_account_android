@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17dp"
+                android:text="Add Details"
+                android:id="@+id/txtDetails"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:id="@+id/linearId"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Particulars"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+
+                    android:hint="Particulars"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    ></EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Invoice Number"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="invoice1023"
+                    android:singleLine="true"
+
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    ></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Type "
+                    ></TextView>
+                <EditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="By Cash/By Check/By NEFT/By Bank"
+                    android:singleLine="true"
+
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    ></EditText>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioTransaction"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="debit"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="credit" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Credit Amount"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/creditAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cr."
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    ></EditText>
+            </LinearLayout> <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Debit Amount"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/debitAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Dr."
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    ></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/linearDateId"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15dp"
+                    android:text="Date"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="25-12-1990"
+                    android:paddingTop="5dp"
+                    android:textColor="#000000"
+                    ></TextView>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btnSendData"
+                ></Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

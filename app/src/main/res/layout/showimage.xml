@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/imgFullView"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="Delete"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/delet"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textColor="#fff"
+        android:textColorHint="#ddd"
+        android:hint="Enter Username"
+        android:textSize="14dp"
+        android:background="@drawable/otp_border" />
+
+    <EditText
+        android:id="@+id/etPasssword"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="Enter Password"
+        android:textColorHint="#ddd"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:textSize="14dp"
+        android:background="@drawable/otp_border" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

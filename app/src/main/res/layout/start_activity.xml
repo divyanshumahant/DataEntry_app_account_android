@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:weightSum="2"
+      android:orientation="horizontal"
+      android:layout_height="0dp">
+
+    <LinearLayout
+        android:id="@+id/ledger"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+      <ImageView
+          android:layout_width="120dp"
+          android:background="@drawable/book"
+          android:layout_gravity="center"
+          android:layout_height="120dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="View Ledger"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:textColor="#D81515"
+          android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calender"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+      <ImageView
+          android:layout_width="120dp"
+          android:background="@drawable/calender"
+          android:layout_gravity="center"
+          android:layout_height="120dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="View Calender"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:textColor="#D81515"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:weightSum="2"
+      android:orientation="horizontal"
+      android:layout_height="0dp">
+
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="120dp"
+          android:background="@drawable/camera"
+          android:layout_gravity="center"
+          android:layout_height="120dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="View Gallery"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:textColor="#D81515"
+          android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llrecycle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="120dp"
+          android:background="@drawable/person"
+          android:layout_gravity="center"
+          android:layout_height="120dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="Recycle Bin"
+          android:gravity="center"
+          android:textSize="20dp"
+          android:textColor="#D81515"
+          android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
